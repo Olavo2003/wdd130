@@ -1,0 +1,154 @@
+:root {
+  --primary-color: #DDAA46;
+  --accent1-color: #FFFFFF;
+  --accent2-color: #941000;
+
+  --heading-font: 'LXGW Marker Gothic', sans-serif;
+  --body-font: 'Prompt', sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--body-font);
+  color: var(--accent1-color);
+  background-color: #000;
+}
+
+header {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  background-color: var(--primary-color);
+  padding: 1rem;
+}
+
+header img {
+  max-width: 120px;
+}
+
+header h1 {
+  font-family: var(--heading-font);
+  color: var(--accent2-color);
+  text-align: center;
+}
+
+nav ul {
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+}
+
+nav a {
+  color: var(--accent2-color);
+  text-decoration: none;
+}
+
+nav a.active {
+  font-weight: bold;
+}
+
+.hero {
+  position: relative;
+}
+
+.hero img {
+  width: 100%;
+  height: auto;
+}
+
+.hero article {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 1rem;
+  max-width: 60%;
+}
+
+.hero article img {
+  float: right;
+  width: 125px;
+  margin-left: 16px;
+  border-radius: 8px;
+}
+
+/* History Section */
+.history {
+  padding: 2rem;
+  background-color: #111;
+}
+
+.history h2 {
+  font-family: var(--heading-font);
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+}
+
+/* Adventures Section */
+.adventures {
+  padding: 2rem;
+}
+
+.adventure-gallery {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.adventure-gallery figure {
+  text-align: center;
+  background: #111;
+  padding: 0.5rem;
+  border-radius: 8px;
+}
+
+.adventure-gallery img {
+  width: 200px;
+  height: auto;
+  border-radius: 6px;
+}
+
+.adventure-gallery figcaption {
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+}
+
+/* Footer */
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--primary-color);
+  padding: 1rem;
+  color: var(--accent2-color);
+}
+
+.socialmedia {
+  display: flex;
+  gap: 1rem;
+}
+
+.history-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.history-content p {
+  flex: 1 1 200px;
+}
+
+.history-content img {
+  max-width: 300px;
+  height: auto;
+  display: block;
+}
